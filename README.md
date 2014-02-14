@@ -1,13 +1,19 @@
+<b>Javascript to pick a random 15 minute timeslot between a wakeup- and sleep-time</b>
+
+
 Qualtrics: 
-- Place the script in a javascript field of a Question 
+- Place the script in a javascript field of a Question after the wakeup-time and sleep-time questions
 - Configure the the correct QuestionID's in the wakeup, sleep variables in the script
 - make sure you define a embedded data field 'qTime' in the survey flow
 - you may also want to define a hidden input in the header, if you want to use it later in a 
-  javascript, something like: '''html<input id="qTime" name="ED~qTime" type="hidden" value="${e://Field/qTime}"'''
+  javascript, something like: 
+```html
+<input id="qTime" name="ED~qTime" type="hidden" value="${e://Field/qTime}"
+```
 
 
 define your US version time (multiple choice) questions like: (and use the US-version!)
-
+<pre>
 12:00 midnight
 12:15 am
 12:30 am
@@ -33,10 +39,10 @@ define your US version time (multiple choice) questions like: (and use the US-ve
 11:15 pm
 11:30 pm
 11:45 pm
-
+</pre>
 
 define your EU/world version time (multiple choice) questions like: (and use the EU-version!)
-
+<pre>
 00:00
 00:15    
 00:30
@@ -58,3 +64,4 @@ define your EU/world version time (multiple choice) questions like: (and use the
 23:15
 23:30
 23:45
+</pre>
