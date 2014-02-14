@@ -1,10 +1,9 @@
-
 Qualtrics: 
 - Place the script in a javascript field of a Question 
 - Configure the the correct QuestionID's in the wakeup, sleep variables in the script
 - make sure you define a embedded data field 'qTime' in the survey flow
 - you may also want to define a hidden input in the header, if you want to use it later in a 
-  javascript, something like: <input id="qTime" name="ED~qTime" type="hidden" value="${e://Field/qTime}" />
+  javascript, something like: '''html<input id="qTime" name="ED~qTime" type="hidden" value="${e://Field/qTime}"'''
 
 
 define your US version time (multiple choice) questions like: (and use the US-version!)
